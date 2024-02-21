@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, createElement } from "react";
 
 import MarkdownView from "react-showdown";
 
@@ -26,6 +26,6 @@ export class MarkDownText extends Component {
     render() {
         var markdown = this.props.markdownInput.value;
 
-        return <MarkdownView markdown={markdown} options={{ tables: true, emoji: true }} />;
-    }
+        return <MarkdownView markdown={markdown} flavor={this.props.flavor} options={{ tables: true, emoji: true, underline: true}} />;
+    }    
 }

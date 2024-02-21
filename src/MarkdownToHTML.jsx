@@ -8,8 +8,9 @@ export class MarkdownToHTML extends Component  {
     render(){
         return (
             <MarkDownText 
-            markdownInput={this.props.markdownInput.value}
-            
+            markdownInput={this.props.markdownInput}
+            sanitize={this.props.sanitize}
+            flavor={this.props.flavor}
             />
         )
     }

@@ -1,22 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget id="kobeon.markdowntohtml.MarkdownToHTML" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
-        supportedPlatform="Web"
-        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="kobeon.markdowntohtml.MarkdownToHTML"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>Markdown To HTML</name>
     <description>A widget to view Markdown text as HTML</description>
-    <icon/>
+    <icon />
     <properties>
-                <propertyGroup caption="General">
-                <systemProperty key="Label" />
-                <systemProperty key="Visibility"/>
+        <propertyGroup caption="General">
+            <systemProperty key="Label" />
+            <property key="sanitize" type="boolean" defaultValue="false">
+                <caption>Sanitize HTML</caption>
+                <description />
+            </property>
+            <property key="flavor" type="enumeration" defaultValue="github">
+                <caption>Markdown flavor</caption>
+                <description />
+                <enumerationValues>
+                    <enumerationValue key="github">Github</enumerationValue>
+                    <enumerationValue key="original">Original</enumerationValue>
+                    <enumerationValue key="ghost">Ghost</enumerationValue>
+                    <enumerationValue key="allOn">AllOn</enumerationValue>
+                    <enumerationValue key="vanilla">Vanilla</enumerationValue>
+                </enumerationValues>
+            </property>
+            <systemProperty key="Visibility" />
         </propertyGroup>
         <propertyGroup caption="Data source">
             <property key="markdownInput" type="attribute">
                 <caption>Markdown input</caption>
-                <description/>
+                <description />
                 <attributeTypes>
-                    <attributeType name="String"/>
+                    <attributeType name="String" />
                 </attributeTypes>
             </property>
         </propertyGroup>
