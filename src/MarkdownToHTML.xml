@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="kobeon.markdowntohtml.MarkdownToHTML"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
+<widget id="kobeon.markdowntohtml.MarkdownToHTML" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
     xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Markdown To HTML</name>
     <description>A widget to view Markdown text as HTML</description>
     <icon />
