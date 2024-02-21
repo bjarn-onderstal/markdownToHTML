@@ -1,6 +1,7 @@
 import { Component, createElement } from "react";
 
 import MarkdownView from "react-showdown";
+import DOMPurify from 'dompurify';
 
 export class MarkDownText extends Component {
     state = {
@@ -23,12 +24,19 @@ export class MarkDownText extends Component {
         this.props.openBoolean.setValue(false);
     };
 
-    render() {
-        var markdown = this.props.markdownInput.value;
+    sanitizeHtml = html => {
+        if (this.props.sanitize) {
+            return DOMPurify.sanitize(html);
+        } else {
+            return html;
+        }
+    };
 
+    render() {
         return (
             <MarkdownView
-                markdown={markdown}
+                markdown={this.props.markdownInput.value}
+                sanitizeHtml={this.sanitizeHtml}
                 flavor={this.props.flavor}
                 options={{ tables: true, emoji: true, underline: true }}
             />
