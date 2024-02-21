@@ -18,17 +18,6 @@
                 <caption>Sanitize HTML</caption>
                 <description />
             </property>
-            <property key="flavor" type="enumeration" defaultValue="github">
-                <caption>Markdown flavor</caption>
-                <description />
-                <enumerationValues>
-                    <enumerationValue key="github">Github</enumerationValue>
-                    <enumerationValue key="original">Original</enumerationValue>
-                    <enumerationValue key="ghost">Ghost</enumerationValue>
-                    <enumerationValue key="allOn">AllOn</enumerationValue>
-                    <enumerationValue key="vanilla">Vanilla</enumerationValue>
-                </enumerationValues>
-            </property>
         </propertyGroup>
     </properties>
 </widget>

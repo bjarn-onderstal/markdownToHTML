@@ -17,7 +17,6 @@ export class MarkDownText extends Component {
             <MarkdownView
                 markdown={this.props.markdownInput.value}
                 sanitizeHtml={this.sanitizeHtml}
-                flavor={this.props.flavor}
                 options={{ tables: true, emoji: true, underline: true }}
             />
         );
