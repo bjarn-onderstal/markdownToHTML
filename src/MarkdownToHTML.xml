@@ -7,7 +7,13 @@
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <systemProperty key="Label" />
+            <property key="markdownInput" type="attribute">
+                <caption>Markdown input</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
             <property key="sanitize" type="boolean" defaultValue="false">
                 <caption>Sanitize HTML</caption>
                 <description />
@@ -22,16 +28,6 @@
                     <enumerationValue key="allOn">AllOn</enumerationValue>
                     <enumerationValue key="vanilla">Vanilla</enumerationValue>
                 </enumerationValues>
-            </property>
-            <systemProperty key="Visibility" />
-        </propertyGroup>
-        <propertyGroup caption="Data source">
-            <property key="markdownInput" type="attribute">
-                <caption>Markdown input</caption>
-                <description />
-                <attributeTypes>
-                    <attributeType name="String" />
-                </attributeTypes>
             </property>
         </propertyGroup>
     </properties>
