@@ -12,7 +12,7 @@ A widget which will render markdown text as HTML.
 4. Select if the HTML output should be sanitized or not
 
 ## Usage
-You can find more detailed information about using the Markdown structure here: https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax
+You can find more detailed information about using the Markdown structure here: https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax  
 Also, you can find example text in the demo project. Emoji's are supported :smiley:!
 
 ## Demo project
