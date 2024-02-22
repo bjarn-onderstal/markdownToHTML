@@ -21,4 +21,3 @@ https://markdowntohtml-sandbox.mxapps.io
 
 ## Issues, suggestions and feature requests
 https://github.com/bjarnonderstalkobeon/markdownToHTML
-
